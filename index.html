@@ -261,7 +261,7 @@ function prepareToConnect() {
 }
 
 function handleOpenedSocket(socket,jwt) {
-  $('#log').html(`Benvenuti nel nuovo servizio di Messaging asincrono di Vodafone.\n I nostri Agenti saranno presto disponibili.\n`);
+  $('#log').html(`Benvenuti nel nuovo servizio di Messaging asincrono di Vodafone.\n\nI nostri Agenti saranno presto disponibili.\n`);
   socket.registerRequests(apiRequestTypes);
 
   const me = myId(jwt);
